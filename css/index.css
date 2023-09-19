@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    width: 100%;
+    background-image: url(/images/Background.png);
+    background-attachment: fixed;
+}
+
+h1 {
+    animation: dance 3s ease 0s infinite alternate both;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 220%;
+    letter-spacing: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.box {
+    width: 25%;
+    height: 500px;
+    margin: 25px;
+    background-color: rgb(16, 16, 90);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    opacity: 0.7;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.box:hover {
+    opacity: 1;
+    color: rgb(177, 211, 255);
+    box-shadow: 10px 10px 10px rgb(13, 13, 75);
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(118, 195, 247);
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 3px solid lightblue;
+}
+
+p {
+    text-align: justify;
+    height: 120px;
+    padding: 10px;
+    /* line-height: 1.5em; */
+}
+
+input[type="button"] {
+    width: 100%;
+    border: none;
+    margin-top: 11px;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:1000px) {
+    .box {
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .box {
+        width: 60%;
+    }
+
+}
+
+@keyframes dance {
+    0% {
+        letter-spacing: 4px;
+    }
+
+    100% {
+        letter-spacing: 40px;
+    }
+
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.288);
+    font-size: 110%;
+    position: sticky;
+    top: 1px;
+    z-index: 9999;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(16, 16, 90);
+    border-radius: 5px;
+}
