@@ -1,5 +1,5 @@
 # Anime App
-This Anime App made with the help of HTML & CSS.
+This Anime App made with the help of HTML & CSS only.
 <br>
 It is a responsive app optimised for both desktop and mobile phones.
 <br> <br>
